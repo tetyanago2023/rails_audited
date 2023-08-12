@@ -1,0 +1,42 @@
+<h1>Audit</h1>
+<hr />
+<h1>User Audits</h1>
+<% @user_audits.each do |audit| %>
+  <div>
+    <h2><%= audit.action %> by <%= audit.user.email unless audit.user.nil? %> at <%= audit.created_at %></h2>
+    <ul>
+      <%= audit.audited_changes %>
+    </ul>
+  </div>
+<% end %>
+<hr />
+<h1>Post Audits</h1>
+<% @post_audits.each do |audit| %>
+  <div>
+    <h2><%= audit.action %> by <%= audit.user.email unless audit.user.nil? %> at <%= audit.created_at %></h2>
+    <ul>
+      <%= audit.audited_changes %>
+    </ul>
+  </div>
+<% end %>
+<hr />
+<h1>User Associated Audits</h1>
+<% @user_associated_audits.each do |audit| %>
+  <div>
+    <h2><%= audit.action %> by <%= audit.user.email unless audit.user.nil? %> at <%= audit.created_at %></h2>
+    <ul>
+      <%= audit.audited_changes %>
+    </ul>
+  </div>
+<% end %>
+<hr />
+<h1>User Own and Associated Audits</h1>
+<% @user_own_and_associated_audits.each do |audit| %>
+  <div>
+    <h2><%= audit.action %> by <%= audit.user.email unless audit.user.nil? %> at <%= audit.created_at %></h2>
+    <ul>
+      <%= audit.audited_changes %>
+    </ul>
+  </div>
+<% end %>
+
