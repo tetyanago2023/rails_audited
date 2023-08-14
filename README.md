@@ -2,7 +2,7 @@
 
 
 * Ruby version - 3.2.2. 
-* At the moment of this repositary creation there exists the problem to install ruby versions 3+. 
+* At the moment of this repository creation there exists the problem to install ruby versions 3+. 
 * Please try following strategy:
 
   ~% brew list | grep openssl #check if openssl@1.1 is installed, if not
